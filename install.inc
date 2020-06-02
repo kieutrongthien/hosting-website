@@ -1311,7 +1311,7 @@ if(preg_match('/release 7/is', $release) && (!preg_match('/kvm/is', $args['kerne
 }
 
 // Download the Package
-shell_exec('cd /root; wget -O latest.zip "http://files.virtualizor.com/latest.zip" >> '.$args['log'].' 2>&1');
+shell_exec('cd /root; wget -O latest.zip "https://s1.softaculous.com/a/virtualizor/updates.php?give=3.0.3.7" >> '.$args['log'].' 2>&1');
 
 // Unzip the Package
 shell_exec('cd /root; unzip -o latest.zip -d /usr/local/virtualizor >> '.$args['log'].' 2>&1');
